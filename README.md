@@ -1,7 +1,7 @@
-[Home](Litera-home.png)  
+![Home](Litera-home.png)  
 
-[Upload](Litera-upload.png)  
+![Upload](Litera-upload.png)  
 
-[Read](Litera-read.png)  
+![Read](Litera-read.png)  
 
-[Edit](Litera-edit.png)  
+![Edit](Litera-edit.png)  
