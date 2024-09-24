@@ -1,0 +1,40 @@
+.book-link {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.book-image {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 0.625rem; 
+}
+
+.book-link:hover .book-image {
+    transform: scale(0.95);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); 
+    border-radius: 0.625rem; 
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr)); 
+    gap: 2.5rem;
+    justify-items: center;
+}
+
+.book-grid .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}

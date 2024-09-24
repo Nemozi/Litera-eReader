@@ -1,0 +1,150 @@
+body {
+    font-size: 2em; 
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    gap: 2rem; 
+    align-items: start;
+}
+
+.cover-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coverImage {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    border-radius: 0.625rem;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 50rem;
+    padding: 1.3rem;
+    background-color: #ebe4e4;
+    box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    height: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 80%;
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    width: 30%;
+    text-align: right;
+}
+
+.form-group input {
+    border: none;
+    border-bottom: 0.17rem solid #ccc;
+    padding: 0.3rem;
+    outline: none;
+    background-color: transparent;
+    width: 70%;
+    transition: border-bottom 0.3s ease;
+}
+
+.form-group input:focus {
+    border-bottom: 0.2rem solid rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+}
+
+.custom-file-label {
+    display: block;
+    width: 60%;
+    height: 10rem;
+    padding: 1.3rem;
+    text-align: center;
+    border: 0.17rem dashed #ccc;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.custom-file input[type="file"] {
+    display: none;
+}
+
+.btn-primary, .btn-danger {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 0.6rem 1.3rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 1rem;
+    transition: background-color 0.3s ease, width 0.3s ease;
+    width: 20vw; 
+    max-width: 15rem;
+    min-width: 10rem;
+    height: 3rem; 
+}
+
+.btn-primary:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.btn-danger:hover {
+    background-color: #b82a2a; 
+    color: rgb(255, 255, 255);
+}
+
+.button-group {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 1rem; 
+    margin-top: 2rem; 
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 1.5em; 
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; 
+        gap: 1rem;
+    }
+
+    .form-group {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .form-group label {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 0.5rem;
+    }
+
+    .form-group input {
+        width: 100%;
+    }
+
+    .custom-file-label {
+        width: 80%;
+    }
+
+    .btn-primary, .btn-danger {
+        width: 80vw; 
+    }
+}

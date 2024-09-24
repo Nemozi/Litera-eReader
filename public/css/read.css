@@ -1,0 +1,104 @@
+.iFrame {
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    border-radius: 0.5rem;
+    border: 1rem solid;
+}
+
+.headInfo {
+    display: flex;
+    gap: 2rem;
+}
+
+.cover-image-container {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.cover-image-container img {
+    max-width: 10vw;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.headings {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.headings .title {
+    font-size: 2rem; 
+}
+
+.headings .genre,
+.headings .author {
+    font-size: 1.5rem;
+}
+
+.button-group {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: auto;
+    gap: 1rem;
+}
+
+.edit-button, .download-button {
+    padding: 0.6rem 1.3rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: #fff;
+    color: black;
+    font-weight: bold;
+    transition: background-color 0.3s ease, width 0.3s ease;
+    width: 20%;
+    max-width: 300px;
+    min-width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.edit-button:hover, .download-button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .headInfo {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .cover-image-container img {
+        max-width: 80%;
+    }
+
+    .headings .genre,
+    .headings .author {
+        text-align: center;
+    }
+
+    .button-group {
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .edit-button, .download-button {
+        width: 80%;
+        margin-left: 0;
+    }
+
+    #pdfContainer {
+        display: none;
+    }
+}

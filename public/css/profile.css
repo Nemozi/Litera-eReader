@@ -1,0 +1,48 @@
+body {
+    font-family: 'EB Garamond', serif;
+}
+.card-body{
+    background-color: #ebe4e4;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+.card{
+    background-color: #ebe4e4;
+    padding: 1rem;
+    margin: 1rem;
+    border: none;
+}
+.btn-primary, .btn-danger {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 0.6rem 1.3rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 1rem;
+    transition: background-color 0.3s ease, width 0.3s ease;
+    width: 20vw; 
+    max-width: 15rem;
+    min-width: 10rem;
+    height: 3rem; 
+}
+
+.btn-primary:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.btn-danger:hover {
+    background-color: #b82a2a; 
+    color: rgb(255, 255, 255);
+}
+
+.button-group {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 1rem; 
+    margin-top: 2rem; 
+}
